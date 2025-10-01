@@ -1,7 +1,11 @@
 # Build files
 build/
+cmake-build-*/
 *.o
 *.exe
+*.out
+*.obj
+a.out
 huffman
 
 # IDE files
@@ -14,7 +18,3 @@ huffman
 # OS files
 .DS_Store
 Thumbs.db
-
-# Compiled binaries
-*.out
-a.out
