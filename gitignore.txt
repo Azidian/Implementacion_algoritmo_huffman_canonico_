@@ -1,0 +1,20 @@
+# Build files
+build/
+*.o
+*.exe
+huffman
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled binaries
+*.out
+a.out

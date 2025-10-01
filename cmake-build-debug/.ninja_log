@@ -1,0 +1,8 @@
+# ninja log v6
+1990	2615	7810352027112852	Huffman.exe	c748f064655a6246
+48	1989	7810352007705590	CMakeFiles/Huffman.dir/src/main.cpp.obj	4aed5e54f04733d5
+9	2442	7810323097302778	CMakeFiles/Huffman.dir/src/huffman_encoder.cpp.obj	9a9d5a905384e9e0
+633	862	7810364354459836	Test1.exe	a802e953b0d69891
+7	1052	7810366446133570	build.ninja	655f6139be55e352
+25	633	7810364348371344	CMakeFiles/Test1.dir/tests/test_case_1.cpp.obj	8bfa613d373fc742
+33	1232	7810363296651536	CMakeFiles/Test1.dir/src/huffman_encoder.cpp.obj	1692585e6b42014e

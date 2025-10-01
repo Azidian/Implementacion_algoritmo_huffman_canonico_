@@ -1,0 +1,6 @@
+C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug/CMakeFiles/Huffman.dir
+C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug/CMakeFiles/Test1.dir
+C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug/CMakeFiles/Test2.dir
+C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug/CMakeFiles/Test3.dir
+C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

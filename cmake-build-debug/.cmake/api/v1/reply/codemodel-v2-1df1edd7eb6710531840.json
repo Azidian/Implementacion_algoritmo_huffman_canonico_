@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Huffman",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Huffman::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Huffman-Debug-839816fac02cf3d3a850.json",
+					"name" : "Huffman",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test1-Debug-b60a0aa9216f298ff7f4.json",
+					"name" : "Test1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test2-Debug-293b7879c8fb833b2a6d.json",
+					"name" : "Test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test3-Debug-509929c99d262fc0c3b6.json",
+					"name" : "Test3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Wendy/Downloads/Prueba_1/cmake-build-debug",
+		"source" : "C:/Users/Wendy/Downloads/Prueba_1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
