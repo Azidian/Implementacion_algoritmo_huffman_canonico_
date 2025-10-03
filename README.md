@@ -66,115 +66,12 @@ Una vez compilado, el ejecutable se genera en la carpeta `build/`.
 
 ## Ejemplo de salida (resumido)
 
-<img width="251" height="335" alt="image" src="https://github.com/user-attachments/assets/4cd86248-280d-4a9f-83bd-51c6d9510397" />
-
-
-============================================================
-                    CASO DE PRUEBA 1
-              Texto con Muchos Espacios
-============================================================
-
-Texto de entrada (43 caracteres):
-"No por mucho madrugar amanece mas temprano."
-
-=== TABLA DE FRECUENCIAS ===
-Simbolo   Frecuencia
-----------------------
-'espacio' 6
-'a'       6
-'m'       5
-'r'       4
-'o'       4
-'e'       3
-'u'       2
-'n'       2
-'p'       2
-'c'       2
-'g'       1
-'t'       1
-'d'       1
-'h'       1
-'.'       1
-'N'       1
-'s'       1
-
-=== ARBOL DE HUFFMAN ===
-[Raiz:43]
-|-- [null:26]
-|   |-- [null:14]
-|   |   |-- [null:8]
-|   |   |   |-- [null:4]
-|   |   |   |   |-- [n:2]
-|   |   |   |   `-- [null:2]
-|   |   |   |       |-- [s:1]
-|   |   |   |       `-- [h:1]
-|   |   |   `-- [null:4]
-|   |   |       |-- [null:2]
-|   |   |       |   |-- [g:1]
-|   |   |       |   `-- [d:1]
-|   |   |       `-- [c:2]
-|   |   `-- [a:6]
-|   `-- [null:12]
-|       |-- [null:6]
-|       |   |-- [e:3]
-|       |   `-- [null:3]
-|       |       |-- [null:2]
-|       |       |   |-- [N:1]
-|       |       |   `-- [.:1]
-|       |       `-- [t:1]
-|       `-- [espacio:6]
-`-- [null:17]
-    |-- [null:9]
-    |   |-- [m:5]
-    |   `-- [r:4]
-    `-- [null:8]
-        |-- [null:4]
-        |   |-- [u:2]
-        |   `-- [p:2]
-        `-- [o:4]
-
-=== TABLAS DE CODIGOS ===
-Simbolo   Frec    Longitud  Cod. Arbol     Cod. Canon.
-----------------------------------------------------------
-'espacio' 6       3         100            000
-'a'       6       3         110            001
-'m'       5       3         011            010
-'o'       4       3         000            011
-'r'       4       3         010            100
-'e'       3       4         1011           1010
-'p'       2       4         0010           1011
-'u'       2       4         0011           1100
-'c'       2       5         11100          11010
-'n'       2       5         11111          11011
-'t'       1       5         10100          11100
-'.'       1       6         101010         111010
-'N'       1       6         101011         111011
-'d'       1       6         111010         111100
-'g'       1       6         111011         111101
-'h'       1       6         111100         111110
-'s'       1       6         111101         111111
-
-=== ESTADISTICAS DE COMPRESION ===
-Tamano Original:     344 bits (43 caracteres x 8)
-Tamano Comprimido:   164 bits
-Ratio de Compresion: 0.4767
-Reduccion:           52.33%
-
-=== SALIDA COMPRIMIDA ===
-Total de bits: 164
-
-Primeros 128 bits (binario):
-111011011000101101110000001011001101011111001100001000111110010011001111010011000000010100011101110101101010100000100011
-11111000
-
-Representacion hexadecimal COMPLETA:
-ED8B702CD7CC23E4CF4C051DD6A823F8E52B876FA
-(Total: 41 caracteres hexadecimales)
-
-Caso de Prueba 1 completado exitosamente!
-Ratio de Compresion: 0.48
-Reduccion: 52.33%
-
+<img width="409" height="215" alt="image" src="https://github.com/user-attachments/assets/75cae131-d628-46d6-817b-14e374a16035" />
+<img width="218" height="346" alt="image" src="https://github.com/user-attachments/assets/abfd4304-6150-4dcc-bfef-0940e1707ba2" />
+<img width="245" height="338" alt="image" src="https://github.com/user-attachments/assets/adfc9ba0-716d-4a9d-af20-a9dbb252af55" />
+<img width="344" height="272" alt="image" src="https://github.com/user-attachments/assets/8309e582-5b6b-491b-9e04-aa947ff1886a" />
+<img width="368" height="346" alt="image" src="https://github.com/user-attachments/assets/00de481e-f0c1-4486-a76a-49b6c0eb5915" />
+<img width="734" height="305" alt="image" src="https://github.com/user-attachments/assets/a832c811-aa38-4bc3-9863-8cd67f71af3e" />
 
 ## Explicación de Huffman Canónico
 
