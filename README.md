@@ -14,15 +14,15 @@
 
 ## Descripción
 
-Este proyecto implementa un **sistema de compresión de texto** utilizando **codificación Huffman Canónica** en C++.
+Este proyecto implementa un **sistema de compresión de texto** utilizando la **codificación Huffman Canónica** en C++.
 Dado un texto de entrada de al menos 30 caracteres:
 
 * Se construye el árbol de Huffman y apartir del árbol se deriva el código normal de huffman.
 * Se derivan los códigos canónicos a partir de las longitudes de los códigos originales.
 * Se comprime el texto con dichos códigos.
-* Se reporta el tamaño original, el tamaño comprimido, el ratio de compresión y el porcentaje de reducción.
+* Se reporta el tamaño original, el tamaño comprimido, el ratio de compresión teorico y el porcentaje de reducción. (Tenga en cuenta que se usan 8 bits al almacenar, es decir, si su texto comprimido usa 73 bits de manera teorica, en realidad está usando 80 bits en vez de 9 bytes y un bit.)
 * Asimismo, el codigo cánonico lo pasa a código hexadecimal. 
-* Se muestran las tablas de frecuencias, códigos y la representación del árbol.
+* Se muestran las tablas de frecuencias, códigos y la representación del árbol por consola. 
 
 ---
 
