@@ -25,19 +25,55 @@ Dado un texto de entrada de al menos 30 caracteres:
 * Se muestran las tablas de frecuencias, códigos y la representación del árbol por consola. 
 
 ---
+## Estructura del proyecto
+
+├── include/ # Archivos de cabecera (.h)
+├── src/ # Código fuente principal (.cpp)
+│ ├── main.cpp # Punto de entrada del programa (ejecutable huffman)
+├── tests/ # Casos de prueba (ejecutable tests)
+| ├── Test_1.cpp 
+| ├── Test_2.cpp 
+| ├── Test_3.cpp 
+├── CMakeLists.txt # Configuración de CMake
+└── .gitignore
+---
 
 ##  Cómo compilar
 
-El proyecto usa **CMake**. Desde CLion o terminal, además el proyecto fue desarrollado en **C++17** utilizando:
+### Usando CLion
+1. Abrir el proyecto en CLion.  
+2. CLion detectará automáticamente `CMakeLists.txt`.  
+3. Seleccionar la configuración de ejecución (arriba a la derecha):  
+   - `huffman` → ejecuta el programa principal.  
+   - `tests` → ejecuta los casos de prueba. (Elegir el caso de prueba a ejecutar) 
+4. Presionar ▶️ **Run**.  
 
-- No usa dependencias externas.
-- **Compilador:** MinGW-w64 (g++ 14.0) instalado con MSYS2.  
-- **CMake:** cmake.exe versión 3.29.  
-- **Debugger:** MinGW-w64 GDB.  
-- **Entorno de desarrollo:** CLion (configurado con toolchain personalizado "Prueba").
 
-``` 
-- En caso de compilar manualmente sin CMake, también funciona con:  
+### Usando terminal (Linux/Mac/MinGW)
+Desde la raíz del proyecto:
+
+```bash
+# Crear carpeta de compilación
+mkdir build
+cd build
+
+# Generar archivos de compilación
+cmake ..
+
+# Compilar
+cmake --build .
+
+# Ejecutar el programa principal
+./huffman
+
+# Ejecutar los tests
+./tests
+```
+### También puede usarse
+.\huffman.exe
+.\tests.exe
+
+### Compilación manual sin CMake
 
 ```bash
 g++ -std=c++17 main.cpp Compressor.cpp HuffmanTree.cpp CanonicalHuffman.cpp -o huffman
@@ -62,7 +98,15 @@ Una vez compilado, el ejecutable se genera en la carpeta `build/`.
 ./Test2
 ./Test3
 ```
----
+
+El proyecto usa **CMake**. Desde CLion o terminal, además el proyecto fue desarrollado en **C++17** utilizando:
+- No usa dependencias externas.
+- **Compilador:** MinGW-w64 (g++ 14.0) instalado con MSYS2.  
+- **CMake:** cmake.exe versión 3.29.  
+- **Debugger:** MinGW-w64 GDB.  
+- **Entorno de desarrollo:** CLion (configurado con toolchain personalizado "Prueba").
+
+``` 
 
 ## Ejemplo de salida (resumido)
 
