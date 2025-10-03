@@ -21,7 +21,7 @@ Dado un texto de entrada de al menos 30 caracteres:
 * Se derivan los códigos canónicos a partir de las longitudes de los códigos originales.
 * Se comprime el texto con dichos códigos.
 * Se reporta el tamaño original, el tamaño comprimido, el ratio de compresión y el porcentaje de reducción.
-* Asimismo, el codigo cánonico en código hexadecimal. 
+* Asimismo, el codigo cánonico lo pasa a código hexadecimal. 
 * Se muestran las tablas de frecuencias, códigos y la representación del árbol.
 
 ---
