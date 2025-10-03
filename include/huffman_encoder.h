@@ -32,7 +32,7 @@ public:
     // Métodos principales 
     void buildHuffmanTree(); //Construye el árbol de Huffman.
     void generateCanonicalCodes(); //Convierte los códigos Huffman obtenidos del árbol en códigos canónicos.
-    std::string compress(); Comprime el texto usando los códigos
+    std::string compress(); //Comprime el texto usando los códigos
     
     //Métodos de visualización y reporte 
     void displayFrequencies() const; //Muestra la frecuencia de cada símbolo 
