@@ -1,29 +1,30 @@
-#ifndef HUFFMAN_ENCODER_H
+//Evitan que este archivo se incluya más de una vez en la compilación.
+//Si el compilador ya ha visto este archivo, no lo volverá a procesar.
+//Y si no ha visto un archivo de este, lo define y procesa el contenido.
+
+#ifndef HUFFMAN_ENCODER_H 
 #define HUFFMAN_ENCODER_H
 
-#include <string>
-#include <unordered_map>
-#include <vector>
-#include <memory>
-#include "huffman_node.h"
+#include <string> //Para manejo de cadenas
+#include <unordered_map> //Para tablas hash 
+#include <vector> //Para almacenar la tabla de símbolos
+#include <memory> //Contiene utilidades para manejo de memoria dinámica
+#include "huffman_node.h" //Archivo propio con la definición del nodo del árbol
 
-/**
- * Structure to hold symbol information for canonical code generation
- */
+//Almacena información completa de cada símbolo
 struct SymbolInfo {
-    char symbol;
-    int frequency;
-    int code_length;
-    std::string tree_code;      // Non-canonical code from tree
-    std::string canonical_code; // Canonical code
+    char symbol; //El carácter original
+    int frequency; //Cuántas veces aparece
+    int code_length; //Longitud del código Huffman
+    std::string tree_code;      //Código de huffman directamente obtenido del árbol 
+    std::string canonical_code; //Código transformado a canónico 
 
+    //Inicializa todos los miembros, dejando canonical_code vacío
     SymbolInfo(char sym, int freq, int len, const std::string& tree_c)
         : symbol(sym), frequency(freq), code_length(len), tree_code(tree_c), canonical_code("") {}
 };
 
-/**
- * Main Huffman encoder class implementing canonical Huffman coding
- */
+
 class HuffmanEncoder {
 public:
     HuffmanEncoder(const std::string& input_text);
