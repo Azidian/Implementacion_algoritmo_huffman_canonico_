@@ -46,27 +46,27 @@ public:
     double getReductionPercentage() const { return reduction_percentage; } //Devuelve el porcentaje de reducción
 
 private:
-    std::string input_text;
-    std::unordered_map<char, int> frequencies;
-    std::shared_ptr<HuffmanNode> root;
-    std::vector<SymbolInfo> symbol_table;
-    std::unordered_map<char, std::string> canonical_code_map;
+    std::string input_text; //Guarda el texto original que se va a comprimir.
+    std::unordered_map<char, int> frequencies; //Un mapa hash que guarda la frecuencia de cada carácter.
+    std::shared_ptr<HuffmanNode> root; //Un puntero inteligente que apunta a la raíz del árbol de Huffman.
+    std::vector<SymbolInfo> symbol_table; //Un vector que guarda una tabla con información de cada símbolo
+    std::unordered_map<char, std::string> canonical_code_map; //Un mapa que asocia:carácter → código canónico en binario.
 
-    int original_size_bits;
-    int compressed_size_bits;
-    double compression_ratio;
-    double reduction_percentage;
+    int original_size_bits; //Tamaño del texto original en bits.
+    int compressed_size_bits; //Tamaño del texto comprimido en bits.
+    double compression_ratio; //Relación de compresión (Ratio)
+    double reduction_percentage; //Porcentaje de reducción del tamaño
 
-    // Helper methods
+    // Métodos auxiliares
     void calculateFrequencies();
     void extractCodeLengths(std::shared_ptr<HuffmanNode> node, int depth,
                            std::unordered_map<char, std::string>& tree_codes,
-                           const std::string& code);
-    void displayTreeHelper(std::shared_ptr<HuffmanNode> node, const std::string& prefix, bool is_left) const;
+                           const std::string& code); //Recorre recursivamente el árbol de Huffman para obtener los códigos y longitudes de cada símbolo.
+    void displayTreeHelper(std::shared_ptr<HuffmanNode> node, const std::string& prefix, bool is_left) const;//Imprimir el árbol de manera vertical.
     void displayTreeHorizontal(std::shared_ptr<HuffmanNode> node,
                               const std::string& prefix,
-                              bool is_right) const;
-    std::string binaryToHex(const std::string& binary) const;
+                              bool is_right) const; //Muestra el árbol en formato horizontal
+    std::string binaryToHex(const std::string& binary) const; //Convierte una cadena binaria en hexadecimal
 };
 
 #endif // HUFFMAN_ENCODER_H
