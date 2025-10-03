@@ -66,6 +66,9 @@ Una vez compilado, el ejecutable se genera en la carpeta `build/`.
 
 ## Ejemplo de salida (resumido)
 
+<img width="251" height="335" alt="image" src="https://github.com/user-attachments/assets/4cd86248-280d-4a9f-83bd-51c6d9510397" />
+
+
 ============================================================
                     CASO DE PRUEBA 1
               Texto con Muchos Espacios
