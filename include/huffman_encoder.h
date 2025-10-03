@@ -25,25 +25,25 @@ struct SymbolInfo {
 };
 
 
-class HuffmanEncoder {
+class HuffmanEncoder { //Declara la clase HuffmanEncoder.
 public:
-    HuffmanEncoder(const std::string& input_text);
+    HuffmanEncoder(const std::string& input_text); //Constructor Recibe el texto a comprimir
     
-    // Main operations
-    void buildHuffmanTree();
-    void generateCanonicalCodes();
-    std::string compress();
+    // Métodos principales 
+    void buildHuffmanTree(); //Construye el árbol de Huffman.
+    void generateCanonicalCodes(); //Convierte los códigos Huffman obtenidos del árbol en códigos canónicos.
+    std::string compress(); Comprime el texto usando los códigos
     
-    // Visualization and reporting
-    void displayFrequencies() const;
-    void displayTree() const;
-    void displayCodeTables() const;
-    void displayCompressionStats(const std::string& compressed) const;
-    void displayCompressedOutput(const std::string& compressed) const;
+    //Métodos de visualización y reporte 
+    void displayFrequencies() const; //Muestra la frecuencia de cada símbolo 
+    void displayTree() const; //;  Imprime el árbol de Huffman en la consola
+    void displayCodeTables() const; //Muestra la tabla de símbolos junto con sus códigos Huffman y sus longitudes.
+    void displayCompressionStats(const std::string& compressed) const; //Imprime estadísticas de compresión 
+    void displayCompressedOutput(const std::string& compressed) const; //Muestra el texto ya comprimido
 
     // Getters
-    double getCompressionRatio() const { return compression_ratio; }
-    double getReductionPercentage() const { return reduction_percentage; }
+    double getCompressionRatio() const { return compression_ratio; } //Devuelve el ratio de compresión = tamaño original /tamaño comprimido
+    double getReductionPercentage() const { return reduction_percentage; } //Devuelve el porcentaje de reducción
 
 private:
     std::string input_text;
