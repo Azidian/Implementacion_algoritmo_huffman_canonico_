@@ -151,6 +151,6 @@ De esta manera, los códigos son reproducibles, más fáciles de transmitir y pe
 
 ## Video de sustentación
 
-👉 [Enlace al video aquí](https://youtube.com/tu-video)
+👉 [Enlace al video aquí]([https://youtube.com/tu-video](https://youtu.be/KRgI169TccQ?si=NQKAIc4WEVWg8IPL))
 
 ---
