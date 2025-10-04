@@ -90,9 +90,6 @@ Esto generará los siguientes ejecutables en `build/`:
 
 ---
 
-
----
-
 ## Cómo ejecutar
 
 Una vez compilado, el ejecutable se genera en la carpeta `build/`.
