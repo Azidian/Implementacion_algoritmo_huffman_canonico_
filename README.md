@@ -27,15 +27,18 @@ Dado un texto de entrada de al menos 30 caracteres:
 ---
 ## Estructura del proyecto
 
-├── include/ # Archivos de cabecera (.h)
-├── src/ # Código fuente principal (.cpp)
-│ ├── main.cpp # Punto de entrada del programa (ejecutable huffman)
-├── tests/ # Casos de prueba (ejecutable tests)
-| ├── Test_1.cpp 
-| ├── Test_2.cpp 
-| ├── Test_3.cpp 
-├── CMakeLists.txt # Configuración de CMake
-└── .gitignore
+include/ # Archivos de cabecera (.h)
+src/ # Código fuente principal (.cpp)
+main.cpp # Punto de entrada del programa (ejecutable huffman)
+
+tests/ # Casos de prueba (ejecutable tests)
+- Test_1.cpp 
+- Test_2.cpp 
+- Test_3.cpp 
+
+CMakeLists.txt # Configuración de CMake
+gitignore
+
 ---
 
 ##  Cómo compilar
@@ -46,7 +49,7 @@ Dado un texto de entrada de al menos 30 caracteres:
 3. Seleccionar la configuración de ejecución (arriba a la derecha):  
    - `huffman` → ejecuta el programa principal.  
    - `tests` → ejecuta los casos de prueba. (Elegir el caso de prueba a ejecutar) 
-4. Presionar ▶️ **Run**.  
+4. Presionar  **Run**.  
 
 
 ### Usando terminal (Linux/Mac/MinGW)
@@ -87,17 +90,9 @@ Esto generará los siguientes ejecutables en `build/`:
 
 ---
 
-## Cómo ejecutar
+###Cómo ejecutar
 
 Una vez compilado, el ejecutable se genera en la carpeta `build/`.
-
-### Casos de prueba
-
-```bash
-./Test1
-./Test2
-./Test3
-```
 
 El proyecto usa **CMake**. Desde CLion o terminal, además el proyecto fue desarrollado en **C++17** utilizando:
 - No usa dependencias externas.
@@ -106,16 +101,7 @@ El proyecto usa **CMake**. Desde CLion o terminal, además el proyecto fue desar
 - **Debugger:** MinGW-w64 GDB.  
 - **Entorno de desarrollo:** CLion (configurado con toolchain personalizado "Prueba").
 
-``` 
-
-## Ejemplo de salida (resumido)
-
-<img width="409" height="215" alt="image" src="https://github.com/user-attachments/assets/75cae131-d628-46d6-817b-14e374a16035" />
-<img width="218" height="346" alt="image" src="https://github.com/user-attachments/assets/abfd4304-6150-4dcc-bfef-0940e1707ba2" />
-<img width="245" height="338" alt="image" src="https://github.com/user-attachments/assets/adfc9ba0-716d-4a9d-af20-a9dbb252af55" />
-<img width="344" height="272" alt="image" src="https://github.com/user-attachments/assets/8309e582-5b6b-491b-9e04-aa947ff1886a" />
-<img width="368" height="346" alt="image" src="https://github.com/user-attachments/assets/00de481e-f0c1-4486-a76a-49b6c0eb5915" />
-<img width="734" height="305" alt="image" src="https://github.com/user-attachments/assets/a832c811-aa38-4bc3-9863-8cd67f71af3e" />
+---
 
 ## Explicación de Huffman Canónico
 
