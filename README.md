@@ -88,7 +88,7 @@ Esto generará los siguientes ejecutables en `build/`:
 * `Test2` → Caso de prueba: texto con pocos símbolos distintos.
 * `Test3` → Caso de prueba: texto con distribución uniforme.
 
----
+```
 
 ## Cómo ejecutar
 
