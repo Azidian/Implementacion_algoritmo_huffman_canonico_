@@ -7,7 +7,7 @@
 
 ### Integrantes
 
-* **Wendy Vanesa Atheotua Chaverra** 
+* **Wendy Vanesa Atehortua Chaverra** 
 * **Isabella Cadavid Posada**
 
 ---
