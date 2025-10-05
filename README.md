@@ -15,6 +15,7 @@
 ## Descripción
 
 Este proyecto implementa un **sistema de compresión de texto** utilizando la **codificación Huffman Canónica** en C++.
+Esta es la version 1.5 y la final de este sistema.
 Dado un texto de entrada de al menos 30 caracteres:
 
 * Se construye el árbol de Huffman y apartir del árbol se deriva el código normal de huffman.
